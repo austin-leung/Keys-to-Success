@@ -1,7 +1,7 @@
 ## Problem: 
 What is the boolean value of the statement
 
->there exists a path through a maze starting at a designated beginning and ending at treasure
+>there exists a path through a maze, starting at a designated beginning and ending at treasure
 
 ?
 
