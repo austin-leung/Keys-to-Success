@@ -1,3 +1,6 @@
+## Personnel: 
+Lamia Bushra, Austin Leung
+
 ## Problem: 
 What is the boolean value of the statement
 
