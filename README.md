@@ -21,6 +21,11 @@ When I am asked to return the boolean value of the statement
 for an adjacent stepping stone that has not been visited before.
 
 
+## Version *n* Wishlist:
+* Find all solutions
+* Find shortest solution
+
+
 ## Pseudocode:
 Mark stone is visited
 
