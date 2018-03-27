@@ -33,12 +33,12 @@ for an adjacent stepping stone that has not been visited before.
 
 * Base Case (if yes): 
 
-⋅⋅⋅* Do nothing. Stop the method.
+   * Do nothing. Stop the method.
    
 * Recursive Case:
 
-⋅⋅⋅* Rotate 90 degrees until the stepping stone in front of you is unvisited and is valid. Rotate up to 4 times.
+   * Rotate 90 degrees until the stepping stone in front of you is unvisited and is valid. Rotate up to 4 times.
    
-⋅⋅⋅* Invoke recursive abstraction
+   * Invoke recursive abstraction
    
-⋅⋅⋅* Go to the last stepping stone you were on, facing the same way.
+   * Go to the last stepping stone you were on, facing the same way.
