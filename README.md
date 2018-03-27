@@ -1,7 +1,7 @@
 ## Personnel: 
 Lamia Bushra, Austin Leung
 
-## Problem: 
+## Statement of Problem: 
 What is the boolean value of the statement
 
 >there exists a path through a maze, starting at a designated beginning and ending at treasure
@@ -21,12 +21,11 @@ When I am asked to return the boolean value of the statement
 for an adjacent stepping stone that has not been visited before.
 
 
-## Version *n* Wishlist:
-* Find all solutions
-* Find shortest solution
+## Base Case:
+The stepping stone that the explorer is currently on is the treasure. 
 
 
-## Pseudocode:
+## English/Pseudocode Description of Algorithm:
 * Mark stone is visited
 
 * Decision: Is your current stepping stone, the treasure?
@@ -42,3 +41,14 @@ for an adjacent stepping stone that has not been visited before.
    * Invoke recursive abstraction
    
    * Go to the last stepping stone you were on, facing the same way.
+
+
+## Class, with Fields and Methods
+null, for the moment
+
+
+## Version *n* Wishlist:
+* Find all solutions
+* Find shortest solution
+
+
