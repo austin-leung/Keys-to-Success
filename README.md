@@ -1,7 +1,10 @@
 ## Problem: 
-Return the boolean value of the statement “there exists one path through a maze
-starting at a designated beginning ending at treasure”.
+What is the boolean value of the statement 
+“*there exists a path through a maze starting at a designated beginning and ending at treasure*”?
 
 ## Recursive Abstraction: 
-When I am asked to return the boolean value of the statement “there exists one path through a maze
-starting at a designated beginning ending at treasure”, the recursive abstraction can move the explorer to the next legal position in the maze.
+When I am asked to return the boolean value of the statement 
+“*there exists one path through a maze starting at a designated beginning ending at treasure*”, 
+the recursive abstraction can return the boolean value of the statement 
+“*there exists one path through a maze starting at a designated beginning ending at treasure*”
+for an adjacent stepping stone that has not been visited before.
