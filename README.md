@@ -28,9 +28,9 @@ The stepping stone that the explorer is currently on is the treasure.
 ## English/Pseudocode Description of Algorithm:
 * Mark stone is visited
 
-* Decision: Is your current stepping stone, the treasure?
+* Decision: Is your current stepping stone the treasure?
 
-* Base Case (if yes): 
+* Base Case (if true): 
 
    * Do nothing. Stop the method.
    
