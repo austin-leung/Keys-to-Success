@@ -39,7 +39,7 @@ The stepping stone that the explorer is currently on is the treasure.
    
          * store this location
 
-   * Rotate 90 degrees until the stepping stone in front of is valid. Rotate up to 4 times.
+   * Rotate 90 degrees until the stepping stone in front of is valid and is unvisited. Rotate up to 4 times.
    
          * Move to the stepping stone in front of you
          
