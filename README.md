@@ -35,12 +35,17 @@ The stepping stone that the explorer is currently on is the treasure.
    * Do nothing. Stop the method.
    
 * Recursive Case:
+   * If you need to make a choice (intersection)
+   
+         * store this location
 
-   * Rotate 90 degrees until the stepping stone in front of you is unvisited and is valid. Rotate up to 4 times.
+   * Rotate 90 degrees until the stepping stone in front of is valid. Rotate up to 4 times.
    
-   * Invoke recursive abstraction
+         * Move to the stepping stone in front of you
+         
+   * Go back to the last location you stored (if none of the stones are valid)
    
-   * Go to the last stepping stone you were on, facing the same way.
+   * Go to the last stepping stone you were on.
 
 
 ## Class, with Fields and Methods
