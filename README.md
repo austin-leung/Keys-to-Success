@@ -39,7 +39,7 @@ The stepping stone that the explorer is currently on is the treasure.
    
          * store this location and then go to the next stepping stone
 
-   * Check the stepping stone in currentFile + 1, currentRank +1, currentFile-1, and currentRank-1 until the stepping stone in front of is valid and is unvisited.
+   * Check the stepping stone in currentFile + 1, currentRank + 1, currentFile - 1, and currentRank - 1 until the stepping stone in front of is valid and is unvisited.
    
          * Move to that stepping stone.
          
