@@ -45,7 +45,7 @@ The stepping stone that the explorer is currently on is the treasure.
          
    * Go back to the last location you stored (if none of the stones are valid)
    
-   * Go to the last stepping stone you were on.
+   * Invoke the Recursive Abstraction
 
 
 ## Class, with Fields and Methods
