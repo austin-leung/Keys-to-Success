@@ -35,13 +35,13 @@ The stepping stone that the explorer is currently on is the treasure.
    * Do nothing. Stop the method.
    
 * Recursive Case:
-   * If the next stepping stone is an intersection:
+   * Keep moving until the next stepping stone is an intersection:
    
-         * store this location
+         * store this location and then go to the next stepping stone
 
-   * Rotate 90 degrees until the stepping stone in front of is valid and is unvisited. Rotate up to 4 times.
+   * Check the stepping stone in currentFile + 1, currentRank +1, currentFile-1, and currentRank-1 until the stepping stone in front of is valid and is unvisited.
    
-         * Move to the stepping stone in front of you
+         * Move to that stepping stone.
          
    * If none of the stones are valid, go back to the last location you stored
    
