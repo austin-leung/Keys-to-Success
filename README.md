@@ -35,7 +35,7 @@ The stepping stone that the explorer is currently on is the treasure.
    * Do nothing. Stop the method.
    
 * Recursive Case:
-   * If you need to make a choice (intersection)
+   * If you need to make a choice (in other words, you are at an intersection):
    
          * store this location
 
