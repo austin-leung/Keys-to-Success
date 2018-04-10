@@ -98,7 +98,7 @@ public class Maze {
         // copy in the old maze
         for (int rank = 0; rank < rankCount; rank++) {
           maze[rank] = new int[old.maze[rank].length];
-          for (int file = 0; file <old.maze[rank].length; file++) {
+          for (int file = 0; file < old.maze[rank].length; file++) {
             maze[rank][file] = old.maze[rank][file];
           }
         }
