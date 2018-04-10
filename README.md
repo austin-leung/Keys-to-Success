@@ -22,8 +22,7 @@ for an adjacent stepping stone that has not been visited before.
 
 
 ## Base Case:
-The stepping stone that the explorer is currently on is the treasure. 
-
+* Return true only if the current stepping stone is the treasure.
 
 ## English/Pseudocode Description of Algorithm:
 * Mark stone is visited
@@ -32,7 +31,9 @@ The stepping stone that the explorer is currently on is the treasure.
 
 * Base Case (if true): 
 
-   * Do nothing. Stop the method.
+   * If current stepping stone is the treasure, return true.
+   
+   * Otherwise, return false.
    
 * Recursive Case:
    * Keep moving until the next stepping stone is an intersection:
