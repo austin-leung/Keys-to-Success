@@ -50,8 +50,13 @@ for an adjacent stepping stone that has not been visited before.
 
 
 ## Class, with Fields and Methods
-null, for the moment
+* Maze: Represent a field with an explorer on it
 
+   * toString(): Return a depiction of the maze
+   * go(int direction): Move the explorer a step in the indicated direction
+   * dropA(int mazeElement): Modify the maze such that indicated mazeElement is in the explorer's position
+   * explorerIsOnA(): Return the mazeElement the explorer is on.
+   
 
 ## Version *n* Wishlist:
 * Find all solutions
