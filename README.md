@@ -22,7 +22,13 @@ for an adjacent stepping stone that has not been visited before.
 
 
 ## Base Case:
-Return true only if the current stepping stone is the treasure.
+Return true if 
+
+ * the current stepping stone is the treasure,
+
+* there are no more possible moves for the explorer to take, or
+
+* the explorer is in the wall
 
 ## English/Pseudocode Description of Algorithm:
 * Mark stone is visited
