@@ -20,16 +20,16 @@
             , Integer.parseInt( commandLine[1])
             , Integer.parseInt( commandLine[2])
             );
-        //  System.out.println( maze + System.lineSeparator());
+          System.out.println( maze + System.lineSeparator());
 
-        // moveTest( maze);
-        // dropTest( maze);
+         moveTest( maze);
+         dropTest( maze);
 
-        // copyConstructTest( maze);
+         copyConstructTest( maze);
 
-        // // test Displayer
-        // displayer = new Displayer( Integer.parseInt( commandLine[3]));
-        // displayerTest( maze);
+         // test Displayer
+         displayer = new Displayer( Integer.parseInt( commandLine[3]));
+         displayerTest( maze);
 
           snapshotDemo( maze);
         }
