@@ -53,24 +53,22 @@ for an adjacent stepping stone that has not been visited before.
 * Maze: Represent a field with an explorer on it
 
    * toString(): Return a depiction of the maze
-   
    * go(int direction): Move the explorer a step in the indicated direction
-   
    * dropA(int mazeElement): Modify the maze such that indicated mazeElement is in the explorer's position
-   
    * explorerIsOnA(): Return the mazeElement the explorer is on.
-   
    
 * Displayer: Display a string at the top of the window
 
    * atTopOfWindow(String pic): Display the pic at the top of the window
-   
    * lineSeparatorsIn(String string): Return the number of line separators in string
-   
+   * copyConstructTest(Maze old): Copy and construct a new maze and check it's independence from the original maze
+   * displayerTest(Maze m): Show changes made to a maze and when  irh
 
 * UserOfMaze: Test Maze Class
 
-   * moveTest(Maze maxze)
+   * moveTest(Maze maze): Move around the maze and check the results
+   * dropTest(Maze maze): Drop maze elements and check the results
+   
    
 ## Version *n* Wishlist:
 * Find all solutions
