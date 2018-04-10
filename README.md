@@ -51,7 +51,7 @@ for an adjacent stepping stone that has not been visited before.
 
 ## Class, with Fields and Methods
 
-*Maze* 
+*Maze:* 
 Represent a field with an explorer on it
    * Fields
       * maze
@@ -65,7 +65,7 @@ Represent a field with an explorer on it
       * dropA(int mazeElement): Modify the maze such that indicated mazeElement is in the explorer's position
       * explorerIsOnA(): Return the mazeElement the explorer is on.
    
-*Displayer*
+*Displayer:*
 Display a string at the top of the window
 
    * Fields
@@ -77,7 +77,7 @@ Display a string at the top of the window
       * copyConstructTest(Maze old): Copy and construct a new maze and check it's independence from the original maze
       * displayerTest(Maze m): Show changes made to a maze and when  irh
 
-*UserOfMaze*
+*UserOfMaze:*
 Test Maze Class
    * Methods
       * moveTest(Maze maze): Move around the maze and check the results
