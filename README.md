@@ -87,4 +87,7 @@ Test Maze Class
 * Find all solutions
 * Find shortest solution
 
+## Known Bugs:
+* tbd
+
 
