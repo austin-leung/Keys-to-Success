@@ -19,10 +19,15 @@
       		throws java.io.FileNotFoundException {
       			System.out.println();
           
-// testing the base case
+// testing the base cases
             Maze baseCaseMaze = new Maze("mazes/basecase_wall.txt", 0, 0);
             MazeSolver baseCaseTest = new MazeSolver(baseCaseMaze);
             System.out.println(baseCaseTest);
+      		}
+        
+            Maze baseCaseTreasure = new Maze("mazes/basecase_treasure.txt", 0, 0);
+            MazeSolver baseCaseTest1 = new MazeSolver(baseCaseTreasure);
+            System.out.println(baseCaseTest1);
       		}
 
       //   tbd code: MazeSolver baseCaseTest = new MazeSolver(baseCaseMaze, Integer.parseInt( commandLine[3]));
