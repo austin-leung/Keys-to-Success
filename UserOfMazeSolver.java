@@ -26,10 +26,13 @@
       				);
 
       			MazeSolver mazeSolver = new MazeSolver (maze, Integer.parseInt( commandLine[3]) );
-
 //probably need incremental tests in between
-
       			System.out.println(mazeSolver); //should print true or false
+          
+// testing the base case
+          Maze baseCaseMaze = new Maze("/mazes/basecase_wall.txt", 0, 0);
+          MazeSolver baseCaseTest = new MazeSolver(basecaseMaze);
+          System.out.println(baseCaseTest);
       		}
       	
       }
