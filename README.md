@@ -24,28 +24,28 @@ starting at an adjacent stepping stone that has not been visited before.
 ## Base Case:
 Return true if the current stepping stone is the treasure or the explorer is in the wall.
 
+
 ## English/Pseudocode Description of Algorithm:
 
 * Decision: Is your current stepping stone the treasure?
 
-* Base Case (if true): 
+* Base Case: 
 
    * If current stepping stone is the treasure, return true.
    
-   * Otherwise, return false.
+   * Else (current stepping stone is the wall), return false.
    
 * Recursive Case:
-   * Keep moving until the next stepping stone is an intersection:
-   
-         * store this location and then go to the next stepping stone.
+         
+   * Take a snapshot of current stepping stone.
 
    * Check the stepping stone in currentFile + 1, currentRank + 1, currentFile - 1, and currentRank - 1 until the stepping stone in front of it is unvisited.
    
          * Move to that stepping stone.
          
-   * If, from this stepping stone, there are no more unvisited stepping stones, go back to the last location you stored
+   * If, from this stepping stone, there are no more unvisited stepping stones, go back to the last location you stored.
    
-   * Invoke the recursive abstraction
+   * Invoke the recursive abstraction.
 
 
 ## Class, with Fields and Methods
