@@ -28,6 +28,17 @@ public class MazeSolver {
 		pathExists = mazeSolution();
 	}
 
+// base case testing overloading constructor without displayer
+	public MazeSolver (Maze mazeGiven) {
+
+		newMaze = mazeGiven;
+
+		//helper method
+		pathExists = mazeSolution();
+	}
+
+
+
 	public String toString() {
 		if (pathExists) {
 			return "At least one path exists, solving the maze! :)";
@@ -40,7 +51,7 @@ public class MazeSolver {
 	private boolean mazeSolution() {
 
 		//pseudocode here
-		return true; //temporarily here so code compiles
+		return false; //temporarily here so code compiles
 	}
 
 }

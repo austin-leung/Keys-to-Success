@@ -20,9 +20,11 @@
       			System.out.println();
           
 // testing the base case
-            Maze baseCaseMaze = new Maze("/mazes/basecase_wall.txt", 0, 0);
-            MazeSolver baseCaseTest = new MazeSolver(basecaseMaze);
+            Maze baseCaseMaze = new Maze("mazes/basecase_wall.txt", 0, 0);
+            MazeSolver baseCaseTest = new MazeSolver(baseCaseMaze);
             System.out.println(baseCaseTest);
       		}
+
+      //   tbd code: MazeSolver baseCaseTest = new MazeSolver(baseCaseMaze, Integer.parseInt( commandLine[3]));
       	
       }
