@@ -74,20 +74,36 @@ Display a string at the top of the window
       * atTopOfWindow(String pic): Display the pic at the top of the window
       * lineSeparatorsIn(String string): Return the number of line separators in string
       * copyConstructTest(Maze old): Copy and construct a new maze and check it's independence from the original maze
-      * displayerTest(Maze m): Show changes made to a maze and when  irh
+      * displayerTest(Maze m): Show changes made to a maze 
 
 *UserOfMaze:*
 Test Maze Class
    * Methods
       * moveTest(Maze maze): Move around the maze and check the results
       * dropTest(Maze maze): Drop maze elements and check the results
-   
+
+*MazeSolver*
+Find the boolean value of the statement
+      there exists at least one path through a maze, starting at a designated beginning and ending at treasure
+?
+
+   * Fields
+      * newMaze: a new instance of Maze
+      * pathExists: a boolean that will answer the recursive abstraction
+      * directionArray: an array to hold the possible directions the explorer can take
+
+   * Methods
+      * toString
+      * mazeSolution(): solves the maze and returns the boolean value of the statement: "There exists at least one path through a maze, starting at a designated beginning and ending at treasure."
+
+*UserOfMazeSolver*
+Test MazeSolver Class
    
 ## Version *n* Wishlist:
 * Find all solutions
 * Find shortest solution
 
 ## Known Bugs:
-* tbd
+* Unable to specify windowHeight in a method in order to display the maze. When using displayer in code, recieved an error message stating that there was an exception.
 
 
