@@ -88,6 +88,5 @@ Test Maze Class
 * Find shortest solution
 
 ## Known Bugs:
-* tbd
-
+* Unable to specify windowHeight in a method in order to display the maze. When using displayer in code, recieved an error message stating that there was an exception.
 
