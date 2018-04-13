@@ -14,6 +14,7 @@ public class MazeSolver {
 	public Displayer newDisplayer;
 
 	public boolean pathExists;
+	private static int[] directionArray = new int[] {Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
 
     //methods
 	public MazeSolver (Maze mazeGiven, int windowHeight) {
@@ -67,10 +68,24 @@ public class MazeSolver {
 
 		//recursive cases
 		else {
-			return true;
-		}
+			for (int direction:directionArray) {
 
-	}
+				Maze snap = new Maze(newMaze); //snapshot of the maze so you can go back if this direction doesn't work out
+				newMaze.dropA(Maze.WALL); //place a wall so you don't go back
+				newMaze.go(direction); //step forward
+
+//recursive abstraction
+if (mazeSolution()) { //if there is a valid solution
+	return mazeSolution(); //aka true
+}
+
+newMaze = snap; //step back if it didn't work
+
+
+}
+return false; //should only be reached if you've exhausted all paths
+}
+}
 
 }
 

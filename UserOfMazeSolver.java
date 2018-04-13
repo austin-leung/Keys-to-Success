@@ -28,9 +28,15 @@
          Maze baseCaseMaze1 = new Maze("mazes/basecase_treasure.txt", 0, 0);
          MazeSolver baseCaseTestTreasure = new MazeSolver(baseCaseMaze1);
          System.out.println(baseCaseTestTreasure);
+
+// final test
+ Maze baseCaseMaze2 = new Maze("mazes/4cell_treasureWest.txt", 0, 2);
+         MazeSolver baseCaseTestTreasur = new MazeSolver(baseCaseMaze2);
+         System.out.println(baseCaseTestTreasur);
+         //  MazeSolver mazeTest = new MazeSolver(mazeTest, Integer.parseInt( commandLine[3]));
+           //System.out.println(mazeTest);
+
+
        }
-
-
-      //   tbd code: MazeSolver baseCaseTest = new MazeSolver(baseCaseMaze, Integer.parseInt( commandLine[3]));
-
+   
      }
