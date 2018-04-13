@@ -82,7 +82,7 @@ Test Maze Class
       * moveTest(Maze maze): Move around the maze and check the results
       * dropTest(Maze maze): Drop maze elements and check the results
 
-*MazeSolver*
+*MazeSolver:*
 Find the boolean value of the statement
       there exists at least one path through a maze, starting at a designated beginning and ending at treasure
 ?
@@ -96,7 +96,7 @@ Find the boolean value of the statement
       * toString
       * mazeSolution(): solves the maze and returns the boolean value of the statement: "There exists at least one path through a maze, starting at a designated beginning and ending at treasure."
 
-*UserOfMazeSolver*
+*UserOfMazeSolver:*
 Test MazeSolver Class
    
 ## Version *n* Wishlist:
