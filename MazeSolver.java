@@ -1,8 +1,6 @@
 /**
 Find the boolean value of the statement
-
 there exists at least one path through a maze, starting at a designated beginning and ending at treasure
-
 ?
 **/
 
@@ -17,19 +15,8 @@ public class MazeSolver {
 	private static int[] directionArray = new int[] {Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
 
     //methods
-	public MazeSolver (Maze mazeGiven, int windowHeight) {
 
-		newMaze = mazeGiven;
-
-        //specify the window height and use Displayer to print out the maze. 
-		newDisplayer = new Displayer(windowHeight);
-		newDisplayer.atTopOfWindow("Maze visualization:" + newMaze);
-
-		//helper method
-		pathExists = mazeSolution();
-	}
-
-// base case testing overloading constructor without displayer
+	// base case testing overloading constructor without displayer
 	public MazeSolver (Maze mazeGiven) {
 
 		newMaze = mazeGiven;
@@ -51,41 +38,45 @@ public class MazeSolver {
 
 	private boolean mazeSolution() {
 
-		//pseudocode here
-
 		//base cases
 		if (newMaze.explorerIsOnA() == Maze.TREASURE) {
-// test if the base case is working for just treasure
+
+			// test if the base case is working for just treasure
 			//return false;
 
 			return true;
 		}
+		
 		else if (newMaze.explorerIsOnA() == Maze.WALL) {
+			
 			// test if the base case is working for just a wall
             // return true; 
+			
 			return false;
 		}
 
 		//recursive cases
 		else {
+			
 			for (int direction:directionArray) {
 
 				Maze snap = new Maze(newMaze); //snapshot of the maze so you can go back if this direction doesn't work out
 				newMaze.dropA(Maze.WALL); //place a wall so you don't go back
 				newMaze.go(direction); //step forward
+				
 
-//recursive abstraction
-if (mazeSolution()) { //if there is a valid solution
-	return mazeSolution(); //aka true
+			//recursive abstraction
+				if (mazeSolution()) { //if there is a valid solution
+					return mazeSolution(); //aka true
+				}
+
+			newMaze = snap; //step back if it didn't work
+
+			}
+	
+			return false; //should only be reached if you've exhausted all paths
+	
+		}
+	}
+
 }
-
-newMaze = snap; //step back if it didn't work
-
-
-}
-return false; //should only be reached if you've exhausted all paths
-}
-}
-
-}
-
