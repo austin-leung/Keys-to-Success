@@ -51,7 +51,26 @@ public class MazeSolver {
 	private boolean mazeSolution() {
 
 		//pseudocode here
-		return false; //temporarily here so code compiles
+
+		//base cases
+		if (newMaze.explorerIsOnA() == Maze.TREASURE) {
+// test if the base case is working for just treasure
+			//return false;
+
+			return true;
+		}
+		else if (newMaze.explorerIsOnA() == Maze.WALL) {
+			// test if the base case is working for just a wall
+            // return true; 
+			return false;
+		}
+
+		//recursive cases
+		else {
+			return true;
+		}
+
 	}
 
 }
+
