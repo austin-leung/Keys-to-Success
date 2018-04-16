@@ -104,7 +104,7 @@ Test MazeSolver Class
 * Find shortest solution
 
 ## Known Bugs:
-* Unable to specify windowHeight in a method in order to display the maze. When using displayer in code, recieved an error message stating that there was an exception.
+* When using displayer, the terminal will display the initial maze then ask for user to enter. After the first enter, rather than the user having to press enter multiple times in order to see the individual steps of the maze, all the mazes will be displayed at once. 
 
 ## v1:
 * Added code for a displayer
