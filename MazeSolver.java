@@ -9,7 +9,8 @@ public class MazeSolver {
     //fields
     // new instances of Maze and Displayer
 	public Maze newMaze;
-	public Displayer newDisplayer;
+	public Displayer displayer;
+	private int stepsTaken;
 
 	public boolean pathExists;
 	private static int[] directionArray = new int[] {Maze.NORTH, Maze.EAST, Maze.SOUTH, Maze.WEST};
@@ -37,7 +38,9 @@ public class MazeSolver {
 	}
 
 	private boolean mazeSolution() {
-
+		
+		displayer.atTopOfWindow( newMaze + "step " + stepsTaken++);
+		
 		//base cases
 		if (newMaze.explorerIsOnA() == Maze.TREASURE) {
 
