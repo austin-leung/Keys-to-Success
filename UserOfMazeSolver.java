@@ -26,7 +26,9 @@
 				, Integer.parseInt( commandLine[2])
 				);
 				System.out.println( maze + System.lineSeparator());
-					
+				
+				MazeSolver mazeSolver = new MazeSolver(maze, Integer.parseInt( commandLine[3]));
+		
 				/**
 				Display changes to a maze.
 				Run by using the height of your shell window as a final argument, like...
