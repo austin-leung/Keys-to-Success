@@ -7,7 +7,7 @@
   o  window height?
 
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1 # no explorer
+      java UserOfMazeSolver mazes/intersection_treasureNorth.txt 0 1 10 
 
  */
 
@@ -19,13 +19,6 @@
 
       		throws java.io.FileNotFoundException {
 		
-		//		Maze maze = new Maze( commandLine[0]
-		//		, Integer.parseInt( commandLine[1])
-		//		, Integer.parseInt( commandLine[2])
-		//		);
-		//		System.out.println( maze + System.lineSeparator());
-		 
-		 
 		 
 		// testing the base cases
 		//expecting false
@@ -61,6 +54,15 @@
       		
 				System.out.println();
 				
+
+        //command line test
+         Maze commandLineMaze = new Maze( commandLine[0]
+          , Integer.parseInt( commandLine[1])
+          , Integer.parseInt( commandLine[2])
+          );
+
+         MazeSolver mazeTest = new MazeSolver(commandLineMaze, Integer.parseInt( commandLine[3]));
+         System.out.println(mazeTest);
 			}
 	  }
       	
