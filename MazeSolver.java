@@ -18,9 +18,10 @@ public class MazeSolver {
     //methods
 
 	// base case testing overloading constructor without displayer
-	public MazeSolver (Maze mazeGiven) {
+	public MazeSolver (Maze mazeGiven, int heightOfDisplayer) {
 
 		newMaze = mazeGiven;
+		displayer = new Displayer( heightOfDisplayer);
 
 		//helper method
 		pathExists = mazeSolution();
