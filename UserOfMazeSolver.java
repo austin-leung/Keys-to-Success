@@ -1,52 +1,21 @@
 /**
   Test MazeSolver class.
-
   Requires command line arguments:
   o  the name of a file containing a maze.
   o  the rank and file where an explorer is starting
   o  window height?
-
   For example,
-      java UserOfMaze mazes/4cell_treasureWest.txt -1 -1 # no explorer
-
+      java UserOfMazeSolver mazes/intersection_treasureNorth.txt 0 1 10 
  */
 
-    public class UserOfMazeSolver {
+      public class UserOfMazeSolver {
 		
-	private static Displayer displayer;
 
       	public static void main(String[] commandLine) 
 
-	
-	      
+
       		throws java.io.FileNotFoundException {
 		
-				Maze maze = new Maze( commandLine[0]
-				, Integer.parseInt( commandLine[1])
-				, Integer.parseInt( commandLine[2])
-				);
-				System.out.println( maze + System.lineSeparator());
-				
-				MazeSolver mazeSolver = new MazeSolver(maze, Integer.parseInt( commandLine[3]));
-		
-				/**
-				Display changes to a maze.
-				Run by using the height of your shell window as a final argument, like...
-				java UserOfMaze mazes/4cell_treasureWest.txt 0 3 25
-				*/
-				
-				private static void displayerTest( Maze m) {
-					int step = 0;
-
-					displayer.atTopOfWindow( m + "step " + step++);
-
-					// move past west edge, Displaying as we go
-					while( step < 5) {
-						m.go( Maze.WEST);
-						displayer.atTopOfWindow( m + "step " + step++);
-					}
-				}	
-		 
 		 
 		// testing the base cases
 		//expecting false
@@ -82,7 +51,16 @@
       		
 		//		System.out.println();
 				
+
+        //command line test
+				 Maze commandLineMaze = new Maze( commandLine[0]
+				  , Integer.parseInt( commandLine[1])
+				  , Integer.parseInt( commandLine[2])
+				  );
+
+				 MazeSolver mazeTest = new MazeSolver(commandLineMaze, Integer.parseInt( commandLine[3]));
+				 System.out.println(mazeTest);
+		 
 			}
 	  }
       	
-      
