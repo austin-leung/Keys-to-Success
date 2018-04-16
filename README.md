@@ -106,4 +106,6 @@ Test MazeSolver Class
 ## Known Bugs:
 * Unable to specify windowHeight in a method in order to display the maze. When using displayer in code, recieved an error message stating that there was an exception.
 
+## v1:
+* Added code for a displayer
 
